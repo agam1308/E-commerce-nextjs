@@ -1,6 +1,7 @@
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Image from 'next/image';
+import { BASE_PATH } from '../../lib/constants';
 
 export default function About() {
   return (
@@ -24,7 +25,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               <div className="relative aspect-square bg-accent rounded-sm overflow-hidden">
                 <Image
-                  src="/hero.png"
+                  src={`${BASE_PATH}/hero.png`}
                   alt="Our Studio"
                   fill
                   className="object-cover"

@@ -5,6 +5,8 @@ import { products } from '../lib/products';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { BASE_PATH } from '../lib/constants';
+
 export default function Home() {
   const featuredProducts = products.slice(0, 3);
 
@@ -32,7 +34,7 @@ export default function Home() {
             </div>
             <div className="flex-1 relative w-full h-[50vh] md:h-full">
                <Image
-                src="/hero.png"
+                src={`${BASE_PATH}/hero.png`}
                 alt="Minimalist Lifestyle"
                 fill
                 className="object-cover object-center"
