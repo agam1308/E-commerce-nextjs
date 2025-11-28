@@ -74,6 +74,22 @@ export default function About() {
             </div>
           </div>
         </section>
+
+        {/* Technologies Section (Public Assets) */}
+        <section className="py-24 bg-accent/20">
+          <div className="container-custom text-center">
+            <h2 className="text-2xl font-bold mb-12">Powered By</h2>
+            <div className="flex flex-wrap justify-center items-center gap-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <Image src={`${BASE_PATH}/next.svg`} alt="Next.js" width={120} height={25} />
+              <Image src={`${BASE_PATH}/vercel.svg`} alt="Vercel" width={100} height={22} />
+              <div className="flex gap-8">
+                <Image src={`${BASE_PATH}/file.svg`} alt="File" width={24} height={24} />
+                <Image src={`${BASE_PATH}/globe.svg`} alt="Globe" width={24} height={24} />
+                <Image src={`${BASE_PATH}/window.svg`} alt="Window" width={24} height={24} />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
