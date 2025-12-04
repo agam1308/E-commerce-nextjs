@@ -35,7 +35,7 @@ export default function Home() {
             <div className="flex-1 relative w-full h-[50vh] md:h-full">
                <Image
                 src={`${BASE_PATH}/hero.png`}
-                alt="Minimalist Lifestyle"
+                alt="Ecommerce Demo Lifestyle"
                 fill
                 className="object-cover object-center"
                 priority

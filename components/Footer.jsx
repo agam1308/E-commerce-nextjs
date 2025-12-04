@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container-custom py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-lg font-bold tracking-tighter">MINIMAL.</h3>
+            <h3 className="text-lg font-bold tracking-tighter">ECOMMERCE DEMO</h3>
             <p className="text-sm text-secondary max-w-xs">
               Curated essentials for a simpler, more meaningful life. Quality over quantity.
             </p>
@@ -53,7 +53,7 @@ export default function Footer() {
         
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-secondary">
-            © {new Date().getFullYear()} Minimal Store. All rights reserved.
+            © {new Date().getFullYear()} Ecommerce Demo. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-secondary">
             <a href="#" className="hover:text-primary transition-colors">Instagram</a>

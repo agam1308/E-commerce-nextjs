@@ -3,7 +3,7 @@ const nextConfig = {
   /* config options here */
   reactCompiler: true,
   output: 'export',
-  basePath: '/E-commerce-nextjs',
+  basePath: process.env.NODE_ENV === 'production' ? '/E-commerce-nextjs' : '',
   images: {
     unoptimized: true,
   },
