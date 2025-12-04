@@ -1,6 +1,7 @@
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Image from 'next/image';
+import { BASE_PATH } from '../../lib/constants';
 
 export default function About() {
   return (
@@ -24,7 +25,7 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
               <div className="relative aspect-square bg-accent rounded-sm overflow-hidden">
                 <Image
-                  src="/hero.png"
+                  src={`${BASE_PATH}/hero.png`}
                   alt="Our Studio"
                   fill
                   className="object-cover"
@@ -79,12 +80,12 @@ export default function About() {
           <div className="container-custom text-center">
             <h2 className="text-2xl font-bold mb-12">Powered By</h2>
             <div className="flex flex-wrap justify-center items-center gap-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-              <Image src="/next.svg" alt="Next.js" width={120} height={25} />
-              <Image src="/vercel.svg" alt="Vercel" width={100} height={22} />
+              <Image src={`${BASE_PATH}/next.svg`} alt="Next.js" width={120} height={25} />
+              <Image src={`${BASE_PATH}/vercel.svg`} alt="Vercel" width={100} height={22} />
               <div className="flex gap-8">
-                <Image src="/file.svg" alt="File" width={24} height={24} />
-                <Image src="/globe.svg" alt="Globe" width={24} height={24} />
-                <Image src="/window.svg" alt="Window" width={24} height={24} />
+                <Image src={`${BASE_PATH}/file.svg`} alt="File" width={24} height={24} />
+                <Image src={`${BASE_PATH}/globe.svg`} alt="Globe" width={24} height={24} />
+                <Image src={`${BASE_PATH}/window.svg`} alt="Window" width={24} height={24} />
               </div>
             </div>
           </div>
