@@ -14,7 +14,7 @@ export default function Navbar() {
       <div className="container-custom flex items-center justify-between h-16">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold tracking-tighter">
-          MINIMAL.
+          ECOMMERCE DEMO
         </Link>
 
         {/* Desktop Navigation */}

@@ -13,7 +13,7 @@ export default function Shop() {
           <div className="mb-12 text-center">
             <h1 className="text-4xl font-bold tracking-tight mb-4">Shop All</h1>
             <p className="text-secondary max-w-2xl mx-auto">
-              Explore our complete collection of minimalist goods. Quality materials, timeless design, and functional beauty.
+              Explore our complete collection of quality products. Discover items that combine style, functionality, and value.
             </p>
           </div>
 

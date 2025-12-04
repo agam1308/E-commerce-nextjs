@@ -23,7 +23,7 @@ export default function Home() {
                 Less is<br />More.
               </h1>
               <p className="text-lg text-secondary max-w-md">
-                Discover our curated collection of minimalist essentials designed to elevate your everyday life.
+                Discover our curated collection of quality products designed to enhance your everyday life.
               </p>
               <Link 
                 href="/shop" 

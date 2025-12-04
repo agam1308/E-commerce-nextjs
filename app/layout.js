@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Minimal Store",
-  description: "Curated minimalist essentials.",
+  title: "Ecommerce Demo",
+  description: "Your one-stop shop for quality products.",
 };
 
 export default function RootLayout({ children }) {

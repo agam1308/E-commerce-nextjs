@@ -35,7 +35,7 @@ export default function About() {
                 <h2 className="text-3xl font-bold tracking-tight">Designed for Living</h2>
                 <div className="space-y-4 text-secondary">
                   <p>
-                    Founded in 2024, Minimal Store was born from a desire to strip away the unnecessary. We partner with artisans who share our commitment to quality materials and timeless design.
+                    Founded in 2024, Ecommerce Demo was created to showcase modern e-commerce capabilities. We offer a curated selection of quality products with a focus on user experience and seamless shopping.
                   </p>
                   <p>
                     Every product in our collection is chosen because it serves a purpose and brings joy. We don't believe in trends; we believe in objects that last.

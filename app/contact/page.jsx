@@ -28,7 +28,7 @@ export default function Contact() {
                     <Mail className="w-6 h-6 text-primary mt-1" />
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-secondary">hello@minimalstore.com</p>
+                      <p className="text-secondary">hello@ecommercedemo.com</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
