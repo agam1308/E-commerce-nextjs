@@ -2,12 +2,17 @@
 
 import Link from 'next/link';
 import { ShoppingBag, Menu, X } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useCart } from '../lib/CartContext';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
   const { cartCount } = useCart();
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   return (
     <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -37,8 +42,10 @@ export default function Navbar() {
         <div className="flex items-center space-x-4">
           <Link href="/cart" className="relative p-2 hover:bg-accent rounded-full transition-colors">
             <ShoppingBag className="w-5 h-5" />
-            {cartCount > 0 && (
-              <span className="absolute top-0 right-0 w-4 h-4 bg-black text-white text-[10px] font-bold flex items-center justify-center rounded-full">
+            {isMounted && cartCount > 0 && (
+              <span 
+                className="absolute top-0 right-0 w-4 h-4 bg-black text-white text-[10px] font-bold flex items-center justify-center rounded-full"
+              >
                 {cartCount}
               </span>
             )}
